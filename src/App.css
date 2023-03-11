@@ -122,9 +122,21 @@ body {
     position: static !important;
   }
 
-  .hero-banner-img {
-    display: none;
+  .hero-banner{
+    margin-bottom: 200px;
   }
+
+  .hero-banner-img {
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 75vh;
+  border-bottom-left-radius: 200px;
+  z-index: -3;
+  opacity: 0.7;
+}
 
   .exercise-card {
     width: 320px;

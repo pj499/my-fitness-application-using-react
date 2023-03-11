@@ -1,15 +1,23 @@
-export const exerciseOptions= {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'eb7f71512dmshe7d51e3a60324eep19746fjsn29852f636a75', //OR process.env.REACT_APP_RAPI_API_KEY 
-      'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
-      url: 'https://exercisedb.p.rapidapi.com/exercises/bodyPartList',
-    }
-  };
+export const exerciseOptions = {
+  method: 'GET',
+  url: 'https://exercisedb.p.rapidapi.com/exercises/bodyPartList',
+  headers: {
+    'X-RapidAPI-Key': '3a231ea117mshce4867173810d92p1ce6c6jsne2707be3b8c7',
+    'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+  }
+};
 
-export const fetchData= async (url, options)=> {
-    const response= await fetch(url, options); //fetches data from API
-    const data= await response.json(); //extract data
+export const youtubeOptions = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': '3a231ea117mshce4867173810d92p1ce6c6jsne2707be3b8c7',
+    'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com'
+  }
+};
 
-    return data;
-}
+export const fetchData = async (url, options) => {
+  const response = await fetch(url, options); //fetches data from API
+  const data = await response.json(); //extract data
+
+  return data;
+};
